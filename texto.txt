@@ -1,0 +1,27 @@
+Para atribuir um valor a uma variável se usa somente um "="
+Exemplo: Var CarName= "Volvo"
+
+operadores
+
+"-" Diminuir
+"+" Adição
+"*" Multiplicação
+"/" Divisão
+"%" Resto
+"+=" Atribuição
+
+eventos
+
+onclick: quando clicar em algum elemento
+onmouseover: quando passar o mouse em cima de algum elemento
+toUpperCase: deixa as letras todas maiúsculas
+toLowerCase: deixas as letras minúsculas
+slice: busca as casas de uma palavra
+replace: para substituir palavra
+
+arrays: sempre usa a  "const" para armazenar a lista
+unshift: adiciona um valor na primeira posição
+
+use o console.log para fins de depuração de código.
+
+use a Const quando não quiser que o valor seja alterado

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Capturando resposta com JavaScript</title>
+  </head>
+  <body>
+    <div>
+      <h1>Capturando resposta com JavaScript</h1>
+    </div>
+    <form id="meuFormulario">
+      <label for="resposta">Qual sua idade?</label>
+      <input type="text" id="resposta" name="resposta" />
+      <button type="submit">Enviar</button>
+    </form>
+    <script>
+      // Captura o formulário
+      const formulario = document.getElementById("meuFormulario");
+
+      // Adiciona um manipulador de evento ao evento "submit" do formulário
+      formulario.addEventListener("submit", function (event) {
+        // Impede o envio padrão do formulário
+        event.preventDefault();
+
+        // Captura a resposta do usuário
+        const respostaUsuario = document.getElementById("resposta").value;
+
+        // Verifica se a idade é menor que 18
+        if (parseInt(respostaUsuario) < 18) {
+          alert("Você não pode acessar, pois é menor de 18 anos.");
+        } else {
+          alert("Aguarde");
+        }
+      });
+    </script>
+  </body>
+</html>

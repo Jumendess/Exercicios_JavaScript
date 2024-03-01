@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      function imprimir() {
+        print();
+      }
+    </script>
+    <style>
+      body {
+        color: #fff;
+        background-color: #000;
+      }
+      h1 {
+        text-align: center;
+        font-family: "Courier New", Courier, monospace;
+        font-size: 19px;
+        color: red;
+        margin-top: 20px;
+      }
+
+      p {
+        text-align: center;
+        font-family: "Courier New", Courier, monospace;
+        font-size: 15px;
+      }
+      .teste {
+        align-items: center;
+        justify-content: center;
+        display: block;
+      }
+      .btn {
+        align-items: center;
+        justify-content: center;
+        display: flex;
+      }
+      .btn button {
+        color: red;
+        border-radius: 10px;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>
+      Aqui vou usar a função que quando clicar no butão ele ativa a impressão da
+      tela
+    </h1>
+    <br /><br /><br /><br /><br /><br />
+    <div class="teste">
+      <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facilis
+        officia vel nam provident. Dolorum modi soluta consequatur recusandae
+        asperiores, unde facilis fugit iusto omnis, pariatur enim eum iure
+        libero! Voluptates?
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor similique
+        nesciunt optio, eum temporibus amet odio molestias fugiat aut minima
+        suscipit iste deleniti. Assumenda commodi eligendi natus, repellendus
+        quae numquam.
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, nostrum?
+        Beatae dolore eveniet adipisci corrupti doloribus officiis corporis
+        quaerat error? Modi non, numquam ducimus consequuntur sint ut recusandae
+        ab aperiam.
+      </p>
+    </div>
+    <div class="btn">
+      <button onclick="imprimir()">Click para imprimir a tela</button>
+    </div>
+  </body>
+</html>

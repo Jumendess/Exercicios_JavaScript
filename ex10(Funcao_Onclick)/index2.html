@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        color: #fff;
+        background-color: #000;
+      }
+      h1 {
+        text-align: center;
+        font-family: "Courier New", Courier, monospace;
+        font-size: 18px;
+      }
+      h2 {
+        text-align: center;
+        font-family: "Courier New", Courier, monospace;
+        font-size: 15px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="title">
+      <h1>Testando o getElementById</h1>
+    </div>
+    <br /><br /><br /><br />
+    <h2 id="teste"></h2>
+  </body>
+  <script>
+    document.getElementById("teste").innerHTML =
+      "Esse texto foi adicionado com Javascript usando o GetElementById, o teste deu certo.";
+  </script>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      function ligar() {
+        document.getElementById("myImage").src = "img/lamp-on.png";
+      }
+      function desligar() {
+        document.getElementById("myImage").src = "img/lamp-off.png";
+      }
+    </script>
+    <style>
+      body {
+        background-color: black;
+      }
+      h1 {
+        color: #fff;
+        text-align: center;
+      }
+      .one {
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        margin-top: 100px;
+      }
+      .one button {
+        margin: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Usando a função onclick</h1>
+    <div class="one">
+      <button onclick="ligar()">Ligar</button>
+      <img id="myImage" src="img/lamp-off.png" style="width: 100px" />
+      <button onclick="desligar()">Desligar</button>
+    </div>
+  </body>
+</html>

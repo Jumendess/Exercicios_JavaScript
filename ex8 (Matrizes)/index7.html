@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>metodos matrizes</title>
+</head>
+<body>
+  <h2>testando arrays usando for</h2>
+  <p id="demo"></p>
+
+</body>
+
+<script>
+  const frutas = ["Maça", "Banana", "Goiaba"]
+  let fLen = frutas.length;
+
+let text = "<ul>";
+for (let i = 0; i < fLen; i++) {
+  text += "<li>" + frutas[i] + "</li>";
+}
+text += "</ul>";
+
+document.getElementById("demo").innerHTML = text;
+  </script>
+</html>
